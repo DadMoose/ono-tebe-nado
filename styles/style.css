@@ -1,1 +1,53 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+    "menu menu menu logo . address address";
+  grid-column-gap: 20px;
+  place-items: center;
+  margin: 92px 24px 96px 24px;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__menu {
+  grid-area: menu;
+  line-height: normal;
+}
+
+.header__links-list-item {
+  list-style-type: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__link_active {
+  text-decoration: underline;
+}
+
+.header__logo {
+  display: block;
+  grid-area: logo;
+  width: 148px;
+}
+
+.address {
+  grid-area: address;
+  width: 240px;
+  font-style: normal;
+  line-height: 135%;
+}
+
