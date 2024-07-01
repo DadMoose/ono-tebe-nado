@@ -21,7 +21,8 @@ ul,
 ol,
 li,
 blockquote,
-address {
+address,
+button {
   margin: 0;
   padding: 0;
 }
